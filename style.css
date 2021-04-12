@@ -1,0 +1,43 @@
+.container{
+    color: white;
+}
+body{
+    background: linear-gradient(to bottom, rgba(92, 80, 80, 0.384) 0%, #c44d4d9f 100%);
+}
+#brand-icon{
+    width: 50px;    
+    height: 50px;
+}
+.my-img{
+    border-radius: 50%;
+    height: 250px;
+    width: 270px;
+    margin: 35px;
+}
+#fishing-bar{
+    width: 70%;
+}
+#drifting-bar{
+    width: 95%;
+}
+#slacking-bar{
+    width: 45%;
+}
+#penetration-bar{
+    width: 69%;
+}
+.maps{
+    height: 300px;
+}
+.work-logo{
+    height: 50px;
+    width: 50px;
+}
+.rec-img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+footer{
+    left: 30%;
+}
