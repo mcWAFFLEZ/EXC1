@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <script src="jscode.js"></script>
     <title>Daniel Sakai CV</title>
 </head>
 <header class="doc-header sticky-top">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="https://www.osakastation.com/osaka-central-fish-market/"><img id="brand-icon"
-                    src=https://icons.iconarchive.com/icons/gcds/chinese-new-year/72/fish-icon.png alt="brand"></a>
+                                                                                                        src=https://icons.iconarchive.com/icons/gcds/chinese-new-year/72/fish-icon.png
+                                                                                                        alt="brand"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -47,139 +49,185 @@
 </header>
 
 <body>
-    <div class="container">
-        <section>
-            <div class="row justify-content-center"><img class="my-img" src="sakai.png" alt="avatar"></div>
-            <h4 class="row justify-content-center" id="personal_info">Personal Information</h4>
-            <div class="row justify-content-center align-items-center">
-                <ul class="list-group col-md-4">
-                    <li class="list-group-item"><i class="bi bi-file-person-fill"></i> Daniel Sakai</li>
-                    <li class="list-group-item"><i class="bi bi-telephone-forward-fill"><a
-                                href="tel:+81-9066580789"></i>+81-9066580789</li></a>
-                    <li class="list-group-item"><i class="bi bi-envelope-fill" id="mail"></i> <a
-                            href="mailto:daniel.UwU@kawaii.com?subject=Hey Homie!&body=You coming to the race tonight?">daniel.UwU@kawaii.com</a>
-                    </li>
-                    <li class="list-group-item"><i class="bi bi-globe"></i><a
-                            href="https://goo.gl/maps/vqWmGtRYLs8graAW8">Osaka, Japan</a></li>
-                </ul>
+<div class="container">
+    <section>
+        <div class="row justify-content-center"><img id="myImg" class="my-img" src="sakai.png" alt="King"></div>
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        <h4 class="row justify-content-center" id="personal_info">Personal Information</h4>
+        <div class="row justify-content-center align-items-center">
+            <ul class="list-group col-md-4">
+                <li class="list-group-item"><i class="bi bi-file-person-fill"></i> Daniel Sakai</li>
+                <li class="list-group-item"><i class="bi bi-telephone-forward-fill"><a
+                        href="tel:+81-9066580789"></a></i>+81-9066580789
+                </li>
+                </a>
+                <li class="list-group-item"><i class="bi bi-envelope-fill" id="mail"></i> <a
+                        href="mailto:daniel.UwU@kawaii.com?subject=Hey Homie!&body=You coming to the race tonight?">daniel.UwU@kawaii.com</a>
+                </li>
+                <li class="list-group-item"><i class="bi bi-globe"></i><a
+                        href="https://goo.gl/maps/vqWmGtRYLs8graAW8">Osaka, Japan</a></li>
+            </ul>
+        </div>
+    </section>
+    <section><br><br>
+        <div class="container mx-auto col-5">
+            <h4 class="row justify-content-center" id="skills">Skills</h4>
+            <div>Fishing</div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                     aria-valuemin="0" aria-valuemax="100" id="fishing-bar"></div>
             </div>
-        </section>
-        <section><br><br>
-            <div class="container mx-auto col-5">
-                <h4 class="row justify-content-center" id="skills">Skills</h4>
-                <div>Fishing</div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
-                        aria-valuemin="0" aria-valuemax="100" id="fishing-bar"></div>
-                </div>
-                <div>Drifting</div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
-                        aria-valuemin="0" aria-valuemax="100" id="drifting-bar"></div>
-                </div>
-                <div>Slacking off</div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
-                        aria-valuemin="0" aria-valuemax="100" id="slacking-bar"></div>
-                </div>
-                <div>Apartment penetration</div>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
-                        aria-valuemin="0" aria-valuemax="100" id="penetration-bar"></div>
-                </div>
+            <div>Drifting</div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                     aria-valuemin="0" aria-valuemax="100" id="drifting-bar"></div>
             </div>
-        </section>
-    </div><br><br>
-    <div class="container">
-        <h4 class="row justify-content-center" id="education">Education</h4>
-        <div class="row justify-content-around">
-            <div class="col-md-6 text-center">
-                <iframe class="embed-responsive-item maps"
+            <div>Slacking off</div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                     aria-valuemin="0" aria-valuemax="100" id="slacking-bar"></div>
+            </div>
+            <div>Apartment penetration</div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"
+                     aria-valuemin="0" aria-valuemax="100" id="penetration-bar"></div>
+            </div>
+        </div>
+    </section>
+</div>
+<br><br>
+<div class="container">
+    <h4 class="row justify-content-center" id="education">Education</h4>
+    <div class="row justify-content-around">
+        <div class="col-md-6 text-center">
+            <iframe class="embed-responsive-item maps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.361042985933!2d135.52227891445554!3d34.82201388040354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fb60db96a653%3A0xf584717b6ac7c9ef!2sOsaka%20University!5e0!3m2!1sen!2sil!4v1617867313597!5m2!1sen!2sil">
-                </iframe>
-                <br><b>Osaka University</b><br>B.sc Marine biology, 2017-2020
-            </div>
-            <div class="col-md-6 text-center">
-                <iframe class="embed-responsive-item maps"
+            </iframe>
+            <br><b>Osaka University</b><br>B.sc Marine biology, 2017-2020
+        </div>
+        <div class="col-md-6 text-center">
+            <iframe class="embed-responsive-item maps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52479.493107495546!2d135.49246607910158!3d34.705979000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e13261dd76cd%3A0xf1594e66ec413ef0!2sMiyakojima%20Driving%20School!5e0!3m2!1sen!2sil!4v1617867625825!5m2!1sen!2sil">
-                </iframe>
-                <br><b>Miyakojima Driving School</b><br>Professional drifting, 2013-2016
-            </div>
+            </iframe>
+            <br><b>Miyakojima Driving School</b><br>Professional drifting, 2013-2016
         </div>
-        <!-- <div class="row justify-content-center">
-            <span class="col-md-5"><b>Osaka University</b><br>B.sc Marine biology, 2017-2020</span>
-            <span class="col-md-5"><b>Miyakojima Driving School</b><br>Professional drifting, 2013-2016</span>
-        </div> -->
-    </div><br><br>
-    <div class="container">
-        <h4 class="row justify-content-center" id="experience">Work Experience</h4>
-        <div class="table-responsive">
-            <table class="table table-dark table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Address</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Duration</th>
-                        <th scope="col">Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row"><img class="work-logo" src="driftlogo.jpeg" alt="drift"></th>
-                        <td>Tokyo drift cafe & bar</td>
-                        <td>Japan, 1F Osaka</td>
-                        <td>Chad</td>
-                        <td>2015 - 2016</td>
-                        <td>Barista</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img class="work-logo" src="fishlogo.jpg" alt="fish"></th>
-                        <td>Fishing market</td>
-                        <td>Shikitsuhigashi, Naniwa Ward, Osaka, Japan</td>
-                        <td>Chad</td>
-                        <td>2016 - 2020</td>
-                        <td>Sailor</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img class="work-logo" src="sadlogo.jfif" alt="sad"></th>
-                        <td>Unemployed</td>
-                        <td>My bed</td>
-                        <td>Sad</td>
-                        <td>2021 - current</td>
-                        <td>____</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div><br><br>
-    <div class="container">
-        <h4 class="row justify-content-center" id="recommend">Recommendations</h4>
-        <div class="row justify-content-center">
-            <div class="col-lg-3 text-center"><img class="rec-img" src="hatsune.png" alt="hatsune"><br><b>Hatsune
-                    Miku</b><br>Arattzattza ya ribiraririn raba rittan rindam denrandu
-                Waba rittatta parippari pariri ribiribi risutan denrandu
-                Yaba rindan tenran deiaroo waraba dubudubudubu deiebu
-                Ra rittan dinran denrandu tatatataduuduu deiabuu. <br><a
+    </div>
+    <!-- <div class="row justify-content-center">
+        <span class="col-md-5"><b>Osaka University</b><br>B.sc Marine biology, 2017-2020</span>
+        <span class="col-md-5"><b>Miyakojima Driving School</b><br>Professional drifting, 2013-2016</span>
+    </div> -->
+</div>
+<br><br>
+<div class="container">
+    <h4 class="row justify-content-center" id="experience">Work Experience</h4>
+    <div class="table-responsive">
+        <table class="table table-dark table-striped">
+            <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Title</th>
+                <th scope="col">Duration</th>
+                <th scope="col">Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row"><img class="work-logo" src="driftlogo.jpeg" alt="drift"></th>
+                <td>Tokyo drift cafe & bar</td>
+                <td>Japan, 1F Osaka</td>
+                <td>Chad</td>
+                <td>2015 - 2016</td>
+                <td>Barista</td>
+            </tr>
+            <tr>
+                <th scope="row"><img class="work-logo" src="fishlogo.jpg" alt="fish"></th>
+                <td>Fishing market</td>
+                <td>Shikitsuhigashi, Naniwa Ward, Osaka, Japan</td>
+                <td>Chad</td>
+                <td>2016 - 2020</td>
+                <td>Sailor</td>
+            </tr>
+            <tr>
+                <th scope="row"><img class="work-logo" src="sadlogo.jfif" alt="sad"></th>
+                <td>Unemployed</td>
+                <td>My bed</td>
+                <td>Sad</td>
+                <td>2021 - current</td>
+                <td>____</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<br><br>
+<div class="container">
+    <h4 class="row justify-content-center" id="recommend">Recommendations</h4>
+    <div class="row justify-content-center">
+        <div class="col-lg-3 text-center"><img class="rec-img" src="hatsune.png" alt="hatsune"><br><b>Hatsune
+            Miku</b><br>Arattzattza ya ribiraririn raba rittan rindam denrandu
+            Waba rittatta parippari pariri ribiribi risutan denrandu
+            Yaba rindan tenran deiaroo waraba dubudubudubu deiebu
+            Ra rittan dinran denrandu tatatataduuduu deiabuu. <br><a
                     href="https://www.facebook.com/HatsuneMikuOfficialPage"><i class="bi bi-facebook"></i></a> <a
                     href="https://github.com/HatsuneMiku"><i class="bi bi-github"></i></a> <a
                     href="https://www.linkedin.com/in/hatsune-miku-0481b6121/"><i class="bi bi-linkedin"></i></a></div>
-            <div class="col-lg-3 text-center"><img class="rec-img" src="bibi.cms" alt="bibi"><br><b>Benjamin
-                    Netanyahu</b><br>Ladies and Gentlemen, if it looks like a duck, walks like a duck, and quacks like a
-                duck, then what is it? That’s right, it’s a <b>Daniel Sakai</b> – but this duck is a nuclear <b>Daniel
-                    Sakai</b>. And
-                it’s time the
-                world started calling a duck a <b>Daniel Sakai</b>.<br><a href="https://www.facebook.com/Netanyahu/"><i
-                        class="bi bi-facebook"></i></a> <a
+        <div class="col-lg-3 text-center"><img class="rec-img" src="bibi.cms" alt="bibi"><br><b>Benjamin
+            Netanyahu</b><br>Ladies and Gentlemen, if it looks like a duck, walks like a duck, and quacks like a
+            duck, then what is it? That’s right, it’s a <b>Daniel Sakai</b> – but this duck is a nuclear <b>Daniel
+                Sakai</b>. And
+            it’s time the
+            world started calling a duck a <b>Daniel Sakai</b>.<br><a href="https://www.facebook.com/Netanyahu/"><i
+                    class="bi bi-facebook"></i></a> <a
                     href="https://twitter.com/netanyahu?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
-                        class="bi bi-twitter"></i></a>
-            </div>
+                    class="bi bi-twitter"></i></a>
         </div>
-    </div><br><br>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    </div>
+</div>
+<br><br>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+
+<div id="Contact" class="container mx-auto my-3 w-50 text-center">
+    <h1>Contact Me</h1>
+    <form>
+        <div class="form-group">
+            <label for="test"></label>
+            <input required type="email" class="bg-dark form-control text-white" id="test" placeholder="name@mail.com">
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <input required type="text" class="bg-dark form-control text-white" placeholder="First name">
+            </div>
+            <div class="col">
+                <input required type="text" class="bg-dark form-control text-white" placeholder="Last name">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="test1"></label>
+            <textarea required id="text-area" maxlength="200" class="bg-dark form-control text-white" id="test1"
+                      rows="5" placeholder="Your request here."></textarea>
+            <span id="current_count">0</span>
+            <span id="maximum_count">/ 200</span>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-light">Send</button>
+    </form>
+</div>
+
 </body>
 <footer class="bg-dark text-center text-white">
     <!-- Grid container -->
@@ -204,7 +252,7 @@
 
             <!-- Linkedin -->
             <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/michael-chen-b84756178/"
-                role="button"><i class="bi bi-linkedin"></i></a>
+               role="button"><i class="bi bi-linkedin"></i></a>
 
             <!-- Github -->
             <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/mcWAFFLEZ" role="button"><i
@@ -213,12 +261,16 @@
         <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2021 Copyright: Gal Partuk and Michael Chen
+    <div class="row">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright: Gal Partuk and Michael Chen
+            <div id="return-to-top-btn">
+                Return to top
+            </div>
+        </div>
+        <!-- Copyright -->
     </div>
-    <!-- Copyright -->
 </footer>
 
 
