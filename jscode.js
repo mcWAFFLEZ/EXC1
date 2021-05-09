@@ -1,10 +1,7 @@
 window.onload = function () {
-    const barData = {"fishing-bar": 70, "drifting-bar": 95, "slacking-bar": 45, "penetration-bar": 69}
-
-    // Get the modal
+    //MODAL LOGIC
     const modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
     const img = document.getElementById("myImg");
     const modalImg = document.getElementById("img01");
     const captionText = document.getElementById("caption");
@@ -14,14 +11,14 @@ window.onload = function () {
         captionText.innerHTML = this.alt;
     }
 
-// Get the <span> element that closes the modal
     const span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
     span.onclick = function () {
         modal.style.display = "none";
     }
 
+    //BARS FILL
+    const barData = {"fishing-bar": 70, "drifting-bar": 95, "slacking-bar": 45, "penetration-bar": 69}
     const progressBars = document.getElementsByClassName("progress");
     for (let i = 0; i < progressBars.length; i++) {
         progressBars[i].addEventListener("mouseover", fill);
@@ -35,17 +32,31 @@ window.onload = function () {
         }
     }
 
+    //TEXT AREA
     document.getElementById('text-area').oninput = countChars;
     const charCounter = document.getElementById('current_count');
+    const submitButton = document.getElementById('submit-btn');
 
     function countChars() {
         const currentLength = this.value.length;
         charCounter.innerText = currentLength.toString();
+        if (currentLength > 200) {
+            submitButton.setAttribute("disabled", "");
+        } else {
+            submitButton.removeAttribute("disabled");
+        }
     }
 
-    let returnToTopBtn = document.getElementById("return-to-top-btn").addEventListener('click', topFunction);
+    //SET AS REQUIRED
+    const formElements = document.getElementsByClassName("form-element");
+    for(let i = 0; i < formElements.length; i++){
+        formElements[i].setAttribute("required","");
+    }
+
+    //RETURN TO TOP BUTTON
+    document.getElementById("return-to-top-btn").addEventListener('click', topFunction);
     function topFunction() {
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        document.documentElement.scrollTop = 0;
     }
 }
 

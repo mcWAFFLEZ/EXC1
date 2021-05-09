@@ -205,26 +205,26 @@
     <form>
         <div class="form-group">
             <label for="test"></label>
-            <input required type="email" class="bg-dark form-control text-white" id="test" placeholder="name@mail.com">
+            <input type="email" class="form-element bg-dark form-control text-white" id="test" placeholder="name@mail.com">
         </div>
         <br>
         <div class="row">
             <div class="col">
-                <input required type="text" class="bg-dark form-control text-white" placeholder="First name">
+                <input type="text" class="form-element bg-dark form-control text-white" placeholder="First name">
             </div>
             <div class="col">
-                <input required type="text" class="bg-dark form-control text-white" placeholder="Last name">
+                <input type="text" class="form-element bg-dark form-control text-white" placeholder="Last name">
             </div>
         </div>
         <div class="form-group">
             <label for="test1"></label>
-            <textarea required id="text-area" maxlength="200" class="bg-dark form-control text-white" id="test1"
+            <textarea id="text-area" class="form-element bg-dark form-control text-white" id="test1"
                       rows="5" placeholder="Your request here."></textarea>
             <span id="current_count">0</span>
             <span id="maximum_count">/ 200</span>
         </div>
         <br>
-        <button type="submit" class="btn btn-light">Send</button>
+        <button type="submit" id="submit-btn" class="btn btn-light">Send</button>
     </form>
 </div>
 
